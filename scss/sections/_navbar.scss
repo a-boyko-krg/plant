@@ -1,0 +1,31 @@
+.navbar {
+   &__wrap {
+      display: flex;
+      align-items: center;
+      width: 1408px;
+      height: 85px;
+      display: flex;
+      color: $tpHeadingFontColor;
+   }
+
+   &__logo {
+      margin-right: 390px;
+   }
+
+   &__menu {
+      display: flex;
+      gap: 44px;
+      margin-right: 101px;
+
+      span {
+         position: relative;
+         top: 3px;
+         left: 5px;
+      }
+
+      a:hover {
+         color: $main1Color;
+      }
+   }
+
+}

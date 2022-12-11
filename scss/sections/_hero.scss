@@ -1,0 +1,107 @@
+.hero {
+   &__back {
+      max-width: 100%;
+      height: 719px;
+      background-image: url(../img/hero/hero-back.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   &__back::before {
+      content: '';
+      background-image: url(../img/hero/hero-big-img.jpg);
+      position: absolute;
+      width: 1013px;
+      height: 673px;
+      top: 46px;
+      left: 904px;
+      z-index: 10;
+   }
+
+   &__back::after {
+      content: '';
+      background-image: url(../img/hero/hero-small-img.png);
+      position: absolute;
+      width: 197px;
+      height: 278px;
+      top: 381px;
+      left: 2px;
+   }
+
+   &__wrap {
+      padding: 133px 0 0 258px;
+      display: flex;
+      flex-direction: column;
+
+      &__logo {
+         font-size: 20px;
+         color: $main1Color;
+         position: relative;
+         top: 3px;
+         margin-right: 5px;
+      }
+   }
+
+
+   &__title {
+      width: 540px;
+      padding: 20px 0;
+
+   }
+
+   &__text {
+      width: 556px;
+   }
+
+   &__button {
+      display: flex;
+      margin: 50px 0;
+      align-items: center;
+      gap: 30px;
+
+      a {
+         color: $tpParagraphColor;
+      }
+
+      a:hover {
+         color: $main1Color;
+      }
+
+      .icon-arrow-right {
+         position: relative;
+         top: 3px;
+         left: 15px;
+      }
+   }
+
+
+   &__advantage {
+      display: flex;
+      width: 467px;
+      gap: 10px;
+      color: $tpHeadingFontColor;
+   }
+
+   &__advantage_item {
+      display: flex;
+      flex-basis: 149px;
+      gap: 10px;
+      align-items: center;
+   }
+
+   &__advantage_img {
+      flex-grow: 1;
+      position: relative;
+   }
+
+   &__advantage_digit {
+      position: absolute;
+      margin: 15px 7px;
+   }
+
+   &__advantage_text {
+      flex-grow: 2;
+   }
+}

@@ -1,0 +1,36 @@
+.header {
+   &__top,
+   &__language {
+      background-color: $main3Color;
+      color: $mainBgWhiteColor;
+
+   }
+
+   &__wrap {
+      max-width: 1425px;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+   }
+
+   &__contacts {
+      display: flex;
+      gap: 30px;
+      color: $mainBgWhiteColor;
+   }
+
+   &__email,
+   &__phone,
+   &__location {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+
+      span {
+         font-size: 25px;
+      }
+   }
+}

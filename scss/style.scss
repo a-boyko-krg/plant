@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+// ================================= Settings ====================================
+@import './settings/variables.scss';
+@import './settings/mixins.scss';
+@import './settings/reset.scss';
+@import './settings/iconfont.scss';
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url('../fonts/icons.woff2') format('woff2'),
+    url('../fonts/icons.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+// ================================= Sections ====================================
+@import './sections/header.scss';
+@import './sections/navbar.scss';
+@import './sections/hero.scss';
+@import './sections/services.scss';
+@import './sections/promo.scss';
+@import './sections/why.scss';
+@import './sections/faq.scss';
+@import './sections/articles.scss';
+@import './sections/footer.scss';
+
+// ================================= Colors ====================================
+.green {
+  color: $main1Color;
+}
+
+.white {
+  color: $mainBgWhiteColor;
+}
+
+.grey {
+  color: $tpParagraphColor;
+}
+
+.black {
+  color: $tpHeadingFontColor;
+}
+
+.white {
+  color: $mainBgWhiteColor;
+}
+
+// ================================= Containers ====================================
+.big-container {
+  max-width: 1928px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+// ================================= Buttons ====================================
+.btn {
+  @include btn;
+
+  &:hover {
+    background-color: $mainBgWhiteColor;
+    color: $main1Color;
+  }
+}
+
+.btn_white {
+  @include btn-white;
+
+  &:hover {
+    background-color: $main1Color;
+    color: $main1LightBgColorSecondary;
+  }
+
+}
+
+.callus__btn {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  span {
+    font-size: 30px;
+  }
+}
+
+.quate__btn {
+  width: 175px;
+}
+
+.discover__btn {
+  width: 190px;
+}
+
+.why__btn {
+  margin-top: 50px;
+}
+
+.articles_btn {
+  width: 140px;
+}
+
+// ================================= Titleses & texts ====================================
+.topMenuText {
+  @include topMenuText;
+}
+
+.menuText {
+  @include menuText;
+}
+
+.linkText {
+  @include link;
+}
+
+.advText {
+  @include advText;
+}
+
+
+.title-h1 {
+  @include h1Text;
+}
+
+.title-h2 {
+  @include h2Text;
+
+}
+
+.title-h3 {
+  @include h3Text;
+}
+
+.title-h4 {
+  @include h4Text;
+}
+
+.p-text {
+  @include pText;
+}
+
+.p2-text {
+  @include p2Text;
+}
+
+
+
+
+
+
+
+
+
+
+

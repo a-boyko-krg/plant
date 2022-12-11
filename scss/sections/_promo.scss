@@ -1,0 +1,85 @@
+.promo {
+
+   &__wrap {
+      display: flex;
+      position: relative;
+      padding-top: 100px;
+      justify-content: space-between;
+      gap: 240px;
+   }
+
+   &__wrap::before {
+      content: '';
+      background-image: url(../img/promo/promo-plant.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 339px;
+      height: 409px;
+      top: 110px;
+      left: -334px;
+      z-index: 10;
+   }
+
+   &__images {
+      display: flex;
+   }
+
+   &__rectangle {
+      width: 450px;
+      height: 706px;
+      position: relative;
+   }
+
+   &__bigimg {
+      width: 601px;
+      height: 741px;
+      position: absolute;
+      margin: 36px 0 0 24px;
+   }
+
+   &__smallimg {
+      width: 456px;
+      height: 356px;
+      border: 15px solid #ffffff;
+      border-radius: 10px;
+      position: absolute;
+      margin: 597px 0 0 230px;
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+   }
+
+   &__title {
+      max-width: 580px;
+      padding-bottom: 30px;
+   }
+
+   &__text {
+      max-width: 677px;
+      margin-bottom: 20px;
+   }
+
+   &__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 50px 0 0 20px;
+   }
+
+   &__card {
+      display: flex;
+      flex-basis: 320px;
+      align-items: center;
+      gap: 30px;
+   }
+
+
+   &__btn {
+      margin: 100px 0 0 27px;
+   }
+
+}

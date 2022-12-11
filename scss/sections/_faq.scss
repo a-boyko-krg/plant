@@ -1,0 +1,68 @@
+.faq {
+   &__wrap {
+      margin-top: 139px;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__text {
+      width: 828px;
+      padding: 30px 0 12px 0;
+   }
+
+   &__accordion {
+      width: 810px;
+      height: 59px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $main01BgColor;
+      border-radius: 5px;
+      background-image: url(../img/faq/plus-black.png);
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+   }
+
+   .active,
+   &__accordion:hover {
+      background: $main1Color;
+      color: $mainBgWhiteColor;
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+   }
+
+   &__accordion:hover {
+      background-image: url(../img/faq/plus-white.png);
+
+   }
+
+   .active {
+      background-image: url(../img/faq/cross-white.png);
+
+   }
+
+   &__accordion {
+      text-align: left;
+      padding: 13px 30px;
+
+   }
+
+   &__panel {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+   }
+
+   &__panel_text {
+      width: 752px;
+      padding: 20px 0 15px 0;
+
+   }
+
+   &__image {
+      margin-top: 62px;
+   }
+}
